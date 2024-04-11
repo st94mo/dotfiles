@@ -1,0 +1,8 @@
+git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
+
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+
+eval "$(tmuxifier init -)"
+
+tmuxifier edit-session rails
+tmuxifier load-session rails
