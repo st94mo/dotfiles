@@ -49,7 +49,9 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty --config-file ~/.config/alacritty/alacritty.toml
+
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -188,4 +190,4 @@ bindsym $mod+r mode "resize"
 #bar {
 #        status_command i3status
 #}
-exec_always ~/.config/polybar/launch.sh &
+exec_always ~/.config/polybar/scripts/launch.sh &
