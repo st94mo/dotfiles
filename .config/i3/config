@@ -192,4 +192,5 @@ bindsym $mod+r mode "resize"
 #}
 
 exec_always --no-startup-id picom -b
+exec_always --no-startup-id feh --bg-scale ~/Downloads/wallpaper/wallpaper.jpg &
 exec_always ~/.config/polybar/scripts/launch.sh &
